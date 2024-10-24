@@ -4,4 +4,6 @@ A running collection of random scripts I've written over the years as needed. Fe
 
 ## All Doohickeys (so far)
 
-coming soon
+| Folder Name                            | Tools Used                  | Details                                                                                   |
+| -------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
+| [sendmail-py](./sendmail-py/) | Python, REST APIs, SendGrid | A simple Python script I wrote to automatically send emails to myself via SendGrid's API. |
