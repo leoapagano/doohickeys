@@ -4,6 +4,7 @@ A running collection of random scripts I've written over the years as needed. Fe
 
 ## All Doohickeys (so far)
 
-| Folder Name                            | Tools Used                  | Details                                                                                   |
-| -------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
-| [sendmail-py](./sendmail-py/) | Python, REST APIs, SendGrid | A simple Python script I wrote to automatically send emails to myself via SendGrid's API. |
+| Folder Name                                  | Tools Used                       | Details                                                                                            |
+| -------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [bash-speedtest](./bash-speedtest/) | Bash, TCP/IP, JSON/jq, Tailscale | A Bash script I wrote to readably diagnose and benchmark the link between my laptop and my server. |
+| [sendmail-py](./sendmail-py/)       | Python, REST APIs, SendGrid      | A simple Python script I wrote to automatically send emails to myself via SendGrid's API.          |
