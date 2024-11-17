@@ -28,7 +28,7 @@ bash-speedtest() {
 
 	# Download test
 	echo -n "Downloading from $SPEEDTEST_MACHINE_NAME... "
-	iperf3 -c $SPEEDTEST_HOSTNAME -4 -O 2 -t 6 --json | \
+	iperf3 -c $SPEEDTEST_HOSTNAME -R -4 -O 2 -t 6 --json | \
 	jq -r "(.end.sum_received.bytes / .end.sum_received.seconds / 131072 | . * 10 | round / 10 | tostring) \
 	+ \" Mbps (\" \
 	+ (.end.sum_received.bytes / .end.sum_received.seconds / 1048576 | . * 100 | round / 100 | tostring) \
@@ -40,7 +40,7 @@ bash-speedtest() {
 
 	# Upload test
 	echo -n "Uploading to $SPEEDTEST_MACHINE_NAME...     "
-	iperf3 -c $SPEEDTEST_HOSTNAME -R -4 -O 2 -t 6 --json | \
+	iperf3 -c $SPEEDTEST_HOSTNAME -4 -O 2 -t 6 --json | \
 	jq -r "(.end.sum_received.bytes / .end.sum_received.seconds / 131072 | . * 10 | round / 10 | tostring) \
 	+ \" Mbps (\" \
 	+ (.end.sum_received.bytes / .end.sum_received.seconds / 1048576 | . * 100 | round / 100 | tostring) \
